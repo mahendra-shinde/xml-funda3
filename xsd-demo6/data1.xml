@@ -1,0 +1,48 @@
+<?xml-stylesheet href="style.xsl" type="text/xsl"?>
+
+<accounts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./schema2.xsd">
+	<account>
+		<acc-no>102768757</acc-no>
+		<opening-date>2020-08-20</opening-date>
+		<holderName>
+			<firstName>Mahendra</firstName>
+			<lastName>Shinde</lastName>
+			<address>
+				<business>Andheri East, Mumbai</business>
+			</address>
+		</holderName>
+	</account>
+	<account>
+		<acc-no>102768758</acc-no>
+		<opening-date>2020-08-22</opening-date>
+		<holderName>
+			<firstName>Steve</firstName>
+			<lastName>Rogers</lastName>
+			<address>
+				<business>Andheri East, Mumbai</business>
+			</address>
+		</holderName>
+	</account>
+	<account>
+		<acc-no>102768761</acc-no>
+		<opening-date>2021-10-20</opening-date>
+		<holderName>
+			<firstName>Bruce</firstName>
+			<lastName>Banners</lastName>
+			<address>
+				<business>Bhandup, Mumbai</business>
+			</address>
+		</holderName>
+	</account>
+	<account>
+		<acc-no>102768762</acc-no>
+		<opening-date>2021-01-25</opening-date>
+		<holderName>
+			<firstName>Tony</firstName>
+			<lastName>Stark</lastName>
+			<address>
+				<business>Dharavi, Mumbai</business>
+			</address>
+		</holderName>
+	</account>
+</accounts>
