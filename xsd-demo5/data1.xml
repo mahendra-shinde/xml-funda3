@@ -1,0 +1,13 @@
+<m:accounts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://mahendra.com/finance/accounts ./schema2.xsd" xmlns:m="http://mahendra.com/finance/accounts">
+	<m:account>
+		<m:acc-no>102768757</m:acc-no>
+		<m:opening-date>2020-08-20</m:opening-date>
+		<m:holderName>
+			<m:firstName>Mahendra</m:firstName>
+			<m:lastName>Shinde</m:lastName>
+			<m:address>
+				<m:business>Andheri East, Mumbai</m:business>
+			</m:address>
+		</m:holderName>
+	</m:account>
+</m:accounts>

@@ -1,0 +1,15 @@
+<product-list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:noNamespaceSchemaLocation="./schema2.xsd">
+	<product>
+		<name>Product X</name>
+		<id>101</id>
+		<price>12000</price>
+		<quantity>12</quantity>
+	</product>
+	<product>
+		<id>101</id>
+		<price>12000</price>
+		<name>Product X</name>
+		<quantity>12</quantity>
+	</product>		
+</product-list>

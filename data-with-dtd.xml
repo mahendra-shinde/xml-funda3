@@ -1,0 +1,11 @@
+<!-- Add Reference to DTD from XML Document -->
+
+<!--  Syntax for DOCTYPE
+	<!DOCTYPE [root-elemenet] [ SYSTEM | PUBLIC ] [Path to DTD] >
+	SYSTEM ==> DTD is in local directory
+	PUBLIC ==> DTD is from remote url
+-->
+<!DOCTYPE loan-list SYSTEM "./schema1.dtd" >
+<loan-list>
+	<loan acc-no="SB1627676" customer-id="282t82482t3t" balance="1200000" category="CITY" />
+</loan-list>

@@ -1,0 +1,53 @@
+<!-- XML Schema without any namespace -->
+<!-- Unique XML Schema which used for defining user-defined schema 
+	 Alias "xs" is used for reference to all the element of XML Schema
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		targetNamespace="http://mahendra.com/finance/accounts"	
+		xmlns:m="http://mahendra.com/finance/accounts"
+		elementFormDefault="qualified"	
+	>
+	<xs:element name="accounts" type="m:accountsType">
+	</xs:element>
+
+	<xs:complexType name="accountsType">
+		<xs:sequence>
+			<xs:element name="account" type="m:accType" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="accType">
+		<xs:sequence>
+			<xs:element name="acc-no" type="xs:string"/>
+			<xs:element name="opening-date" type="m:dtType"/>
+			<xs:element name="holderName" type="m:custType" /> 
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:simpleType name="dtType">
+		<xs:restriction base="xs:date"> 
+			<xs:maxExclusive value="2022-01-01" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="custType">
+		<xs:sequence>
+			<xs:element name="firstName" type="nameType"/>
+			<xs:element name="lastName" type="nameType"/>
+			<xs:element name="address" type="addType"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="addType">
+		<xs:choice>
+			<xs:element name="residential" type="xs:string"/>
+			<xs:element name="business" type="xs:string"/>
+		</xs:choice>
+	</xs:complexType>
+
+	<xs:simpleType name="nameType">
+		<xs:restriction base="xs:string" >
+			<xs:pattern value="[A-Z][a-z]*" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

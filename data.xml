@@ -1,0 +1,21 @@
+<!-- 
+	XML Document must be "Well-Formed" !
+	1. There must be ONLY ONE ROOT-ELEMENT
+	2. the "Start" and "End" tags of element must Match (Case sensitive)
+	3. The "start" tag, there must be NO-SPACE between "<" and name of tag
+			Invalid  < product>
+			Valid    <product  >
+	4. Attributes can exists only in start tag.
+
+-->
+<product-list>
+	<product id="1">
+		<name>Dell Inspiron 5739</name>
+		<kind>2 in 1 Laptop</kind>
+		<config>
+			<processor>Intel Core i5</processor>
+			<memory>16 GB</memory>
+			<storage>512 GB SSD</storage>
+		</config>
+	</product>
+</product-list>

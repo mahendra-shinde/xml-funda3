@@ -1,0 +1,13 @@
+<accounts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./schema2.xsd">
+	<account>
+		<acc-no>102768757</acc-no>
+		<opening-date>2020-08-20</opening-date>
+		<holderName>
+			<firstName>Mahendra</firstName>
+			<lastName>Shinde</lastName>
+			<address>
+				<business>Andheri East, Mumbai</business>
+			</address>
+		</holderName>
+	</account>
+</accounts>

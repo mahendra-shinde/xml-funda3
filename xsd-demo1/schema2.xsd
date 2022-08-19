@@ -1,0 +1,9 @@
+<!-- XML Schema without any namespace -->
+<!-- Unique XML Schema which used for defining user-defined schema 
+	 Alias "xs" is used for reference to all the element of XML Schema
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="price" type="xs:nonPositiveInteger">
+		
+	</xs:element>
+</xs:schema>

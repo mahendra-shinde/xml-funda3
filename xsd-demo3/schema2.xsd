@@ -1,0 +1,35 @@
+<!-- XML Schema without any namespace -->
+<!-- Unique XML Schema which used for defining user-defined schema 
+	 Alias "xs" is used for reference to all the element of XML Schema
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="accounts" type="accountsType">
+	</xs:element>
+
+	<xs:complexType name="accountsType">
+		<xs:sequence>
+			<xs:element name="account" type="accType" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="accType">
+		<xs:sequence>
+			<xs:element name="acc-no" type="xs:string"/>
+			<xs:element name="opening-date" type="dtType"/>
+			<xs:element name="holderName" type="custType" /> 
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:simpleType name="dtType">
+		<xs:restriction base="xs:date"> 
+			<xs:maxExclusive value="2022-01-01" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="custType">
+		<xs:sequence>
+			<xs:element name="firstName" type="xs:string"/>
+			<xs:element name="lastName" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

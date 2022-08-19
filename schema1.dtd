@@ -1,0 +1,21 @@
+<!-- Define an element with it's children elements 
+ 	<!ELEMENT [element-name] ( [child1] , [child2] ... ) 
+  	Elements use "Suffix" to define "number of occurrances" 
+	(acc-no)	Minimum and Maximum ONE occurrance
+	(acc-no?)	Minimum ZERO and Maximum ONE Occurrance
+	(acc-no+)	Minimum ONE and Maximum "Unbounded" (Unlimited) occurrances 
+	(acc-no*)   Minimum ZERO and Maximum "Unbounded" occurrances
+--> 
+<!ELEMENT loan-list (loan+)  >
+<!-- Element "loan" must contain acc-no, customer-id, balance and emi-outstanding in correct sequence -->
+<!ELEMENT loan  EMPTY  >
+<!-- DTD has only TWO data types for TEXT elements:
+	 CDATA  Character Data	(Used for Attributes)
+	 PCDATA Parsed Character Data	(Used for Elements)
+	-->
+<!ATTLIST loan acc-no CDATA #REQUIRED 
+		  customer-id CDATA #REQUIRED
+		  balance CDATA #REQUIRED
+		  emi-pending CDATA #IMPLIED	
+		  category (URBAN|RURAL) "URBAN"
+		>
